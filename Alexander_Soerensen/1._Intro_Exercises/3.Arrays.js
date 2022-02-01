@@ -45,16 +45,16 @@ console.log(diet)
 // Remove the LAST element of the array.
 // Don't remove by index. You know in advance that it's the last in the array because you are too full already. 
 
-
-
+diet.pop()
+console.log(diet)
 
 
 // --------------------------------------
 // Exercise 6 - Copy array
 
 // You really like your daily diet from last exercise. Copy it to a new array called dinnerTray so you can give it to a friend.  
-
-
+const dinnerTray = [...diet]
+console.log(dinnerTray)
 
 // --------------------------------------
 // Exercise 7 - For loop
@@ -62,8 +62,12 @@ console.log(diet)
 const lettersExpanded = ["a","b","c", "d", "e", "f", "g", "h"];
 
 // log every second char in the array starting from b
-
-
+for(let i=0;i<lettersExpanded.length;i++)
+{
+if(i%2!=0){
+    console.log(lettersExpanded[i])
+}
+}
 
 // --------------------------------------
 // Exercise 8 - For loop and if statement
@@ -74,6 +78,14 @@ const discardedNumbers = [];
 
 // log the element if the number is above 6 or below 0
 // else push them to the array discardedNumbers
+
+numbers.forEach(number =>{
+    if(number<0 || number>6)
+    console.log(number)
+    else
+    discardedNumbers.push(number)
+})
+console.log(discardedNumbers)
 
 // --------------------------------------
 

@@ -36,7 +36,7 @@ const diet = ["tomato", "cucumber", "rocket"];
 
 // You are a programmer. In one line (one statement) insert hamburger, soda and pizza between the elements cucumber and rocket
 
-diet.push("hamburger","soda","pizza",diet.splice(1,1).toString())
+diet.splice(2,0,"hamburger","soda","pizza")
 console.log(diet)
 
 // --------------------------------------
@@ -64,7 +64,7 @@ const lettersExpanded = ["a","b","c", "d", "e", "f", "g", "h"];
 // log every second char in the array starting from b
 for(let i=0;i<lettersExpanded.length;i++)
 {
-if(i%2!=0){
+if(i%2!==0){
     console.log(lettersExpanded[i])
 }
 }
